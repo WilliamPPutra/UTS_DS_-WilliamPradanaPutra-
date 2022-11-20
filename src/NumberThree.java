@@ -12,15 +12,11 @@ public class NumberThree {
         MahasiswaList.add(new Mahasiswa(4, "Andrew", "DKV 1", 15));
         MahasiswaList.add(new Mahasiswa(5, "Jennie", "DKV 2", 16));
 
-        MahasiswaList.set(4, new Mahasiswa(6, "Lisa", "TIF 2", 20));
-
-        MahasiswaList.add(3, new Mahasiswa(8, "Billie", "DKV 2", 31));
-
-        System.out.println(MahasiswaList.contains(new Mahasiswa(1, "William", "TIF 1", 27)));
-        System.out.println(MahasiswaList.indexOf(new Mahasiswa(9, "Billie", "TIF 2", 03)));
-
+        MahasiswaList.forEach(Mahasiswa -> System.out.println(Mahasiswa.toString()));
+        System.out.println("Panjang Data Mahasiswa -> " + MahasiswaList.size());
         MahasiswaList.remove(2);
-        MahasiswaList.forEach(Mahasiswa -> System.out.println(Mahasiswa));
 
+        MahasiswaList.forEach(Mahasiswa -> System.out.println(Mahasiswa.toString()));
+        System.out.println("Panjang Data Mahasiswa -> " + MahasiswaList.size());
     }
 }
