@@ -9,13 +9,13 @@ public class NumberTwo {
         Scanner scan = new Scanner(System.in);
         System.out.println("|                Data Absen               |");
         System.out.println("===========================================");
-        System.out.print("Masukkan jumlah data: ");
+        System.out.print("Masukkan jumlah data yang akan diinput: ");
         jumdata = scan.nextInt();
 
         int arrayNilai[] = new int[jumdata];
 
         for (int i = 0; i < jumdata; i++) {
-            System.out.print("Masukkan data ke-" + i + " : ");
+            System.out.print("Masukkan data ke-" + (i+1) + " : ");
             arrayNilai[i] = scan.nextInt();
         }
 
